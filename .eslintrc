@@ -1,0 +1,17 @@
+{
+  "extends": [ "plugin:prettier/recommended", "prettier/react" ],
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],  // apply prettier through ESLint
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": false,
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ],
+    "strict": 0 // for babel-eslint
+  }
+}
